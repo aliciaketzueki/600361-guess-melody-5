@@ -6,7 +6,10 @@ const Settings = {
   ERRORS_COUNT: 3,
 };
 
+const artists = [`Пелагея`, `Краснознаменная дивизия имени моей бабушки`, `Lorde`];
+const tracksCount = 4;
+
 ReactDOM.render(
-    <App name={`Orochimaru`} errorsCount={Settings.ERRORS_COUNT} />,
+    <App errorsCount={Settings.ERRORS_COUNT} artists={artists} tracksCount={tracksCount} />,
     document.querySelector(`#root`)
 );
